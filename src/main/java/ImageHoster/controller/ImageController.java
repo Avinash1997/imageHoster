@@ -136,7 +136,7 @@ public class ImageController {
             updatedImage.setDate(new Date());
 
             imageService.updateImage(updatedImage);
-            return "redirect:/images/" + updatedImage.getId() + "/" + updatedmage.getTitle();
+            return "redirect:/images/" + updatedImage.getId() + "/" + updatedImage.getTitle();
         }   else {
             String error = "Only the owner of the image can edit the image";
             model.addAttribute("image", image);
